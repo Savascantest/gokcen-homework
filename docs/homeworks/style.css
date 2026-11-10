@@ -24,15 +24,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d0783c; outline-offs
 .package-toolbar { align-items: center; display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0 16px; }
 .package-progress { background: #e8f2ef; border-radius: 999px; color: #285b5a; padding: 10px 14px; }
 .section-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
-.section-nav a, .section-actions a { color: #123f42; font-weight: 700; }
-.section-nav a { background: #fff; border: 1px solid #b8d1cb; border-radius: 999px; padding: 8px 11px; text-decoration: none; }
+.section-nav button { background: #fff; border: 1px solid #b8d1cb; border-radius: 999px; color: #123f42; padding: 8px 11px; }
+.section-nav button[aria-selected="true"] { background: #15746d; border-color: #15746d; color: #fff; }
 .section-step { color: #1c7b73; font-size: .75rem; font-weight: 700; letter-spacing: .1em; margin: 0 0 6px; }
 .question-number { color: #1c7b73; }
 .answer-options { display: grid; gap: 8px; }
 .answer-options button:not(:disabled):hover { background: #0d5a55; }
 .section-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 14px; margin-top: 16px; }
+.next-section { background: #d0783c; }
+.finish-note { color: #285b5a; font-weight: 700; }
 .selected-answer { background: #d0783c; }
 .correct-answer { background: #277a4b; }
 .incorrect-answer { background: #a33e36; }
 .question-feedback { color: #285b5a; font-weight: 700; min-height: 1.5em; }
-@media (max-width: 520px) { .archive-shell { padding: 34px 16px; } .archive-card, .future-section, .empty-archive { padding: 16px; } .package-toolbar, .section-actions { align-items: stretch; flex-direction: column; } .package-toolbar button, .section-actions button { width: 100%; } }
+@media (max-width: 520px) { .archive-shell { padding: 34px 16px; } .archive-card, .future-section, .empty-archive { padding: 16px; } .package-toolbar, .section-actions { align-items: stretch; flex-direction: column; } .package-toolbar button, .section-actions button { width: 100%; } .section-nav { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; } .section-nav button { flex: 0 0 auto; } }

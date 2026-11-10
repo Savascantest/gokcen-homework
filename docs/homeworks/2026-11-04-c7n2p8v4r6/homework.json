@@ -11,7 +11,7 @@
       "id": "question-forms",
       "title": "Build clear past questions",
       "function": "grammar",
-      "content": "For most past questions, use question word + did + subject + base verb. Türkçe ipucu: did’den sonra fiilin yalın hâli gelir.",
+      "content": "For most past questions, use question word + did + subject + base verb: Where did you go? Why did she leave? Do not use the past form after did: say “did you go”, not “did you went”.\n\nTürkçe ipucu: did’den sonra fiilin yalın hâli gelir. who is different when who is the subject: “Who called you?” has no did.",
       "questions": [
         { "id": "q1", "prompt": "Choose the correct question.", "choices": ["What did you do yesterday?", "What you did yesterday?", "What did you yesterday do?", "What were you did yesterday?"], "answerIndex": 0 },
         { "id": "q2", "prompt": "Which question asks about an exact clock time?", "choices": ["When did the class start?", "What time did the class start?", "Which class did start?", "What did the class start?"], "answerIndex": 1 },
@@ -24,17 +24,65 @@
       "id": "when-or-what-time",
       "title": "When or what time?",
       "function": "vocabulary",
-      "content": "Use when for a general time or date. Use what time when you need the exact hour and minutes.",
+      "content": "Use when for a general time or date: When did you arrive? — On Tuesday. Use what time for an exact hour: What time did you arrive? — At 7:30.\n\nNotice the answer clues: on Monday, last week, in July usually answer when; at 6:15, at noon, at half past eight usually answer what time.",
       "questions": [
         { "id": "w1", "prompt": "Choose the best question for “At 7:30.”", "choices": ["When did the shop open?", "What time did the shop open?", "Which shop opened?", "Who opened the shop?"], "answerIndex": 1 },
         { "id": "w2", "prompt": "Choose the best question for “Last Friday.”", "choices": ["What time did you travel?", "Which time did you travel?", "When did you travel?", "Who did you travel?"], "answerIndex": 2 }
       ]
     },
     {
+      "id": "question-words",
+      "title": "Choose the right question word",
+      "function": "vocabulary",
+      "content": "Use who for a person, where for a place, why for a reason, which for a choice from a limited group, and what for information in general. Say the question word first, then build the rest of the question carefully.",
+      "questions": [
+        { "id": "v1", "prompt": "___ did you travel with? — My sister.", "choices": ["Who", "Where", "Why", "Which"], "answerIndex": 0 },
+        { "id": "v2", "prompt": "___ did you meet after class? — At the library.", "choices": ["Who", "Where", "Why", "What"], "answerIndex": 1 },
+        { "id": "v3", "prompt": "___ did he leave early? — Because he felt ill.", "choices": ["Who", "Where", "Why", "Which"], "answerIndex": 2 },
+        { "id": "v4", "prompt": "___ bus did you take, the 12 or the 15?", "choices": ["What", "Who", "Where", "Which"], "answerIndex": 3 }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Read an interview",
+      "function": "reading",
+      "content": "Read: “On Saturday, Deniz visited a small art market with a friend. They arrived at eleven o’clock and looked at paintings, jewellery, and handmade notebooks. Deniz bought a blue notebook because it was simple and useful. Later, they drank coffee near the river. They went home at four, tired but happy.”\n\nRead once for the whole story. Read again and find the exact detail that answers each question.",
+      "questions": [
+        { "id": "r1", "prompt": "When did Deniz visit the market?", "choices": ["On Saturday", "At four o’clock", "Last year", "In the evening"], "answerIndex": 0 },
+        { "id": "r2", "prompt": "What time did Deniz arrive?", "choices": ["At four", "At eleven", "At noon", "At seven"], "answerIndex": 1 },
+        { "id": "r3", "prompt": "Why did Deniz buy the notebook?", "choices": ["It was expensive.", "A friend chose it.", "It was simple and useful.", "It was blue and large."], "answerIndex": 2 },
+        { "id": "r4", "prompt": "Where did they drink coffee?", "choices": ["At the market entrance", "At home", "On the bus", "Near the river"], "answerIndex": 3 }
+      ]
+    },
+    {
+      "id": "listening",
+      "title": "Listen, pause, answer",
+      "function": "listening",
+      "content": "Use a device read-aloud tool or ask someone to read this twice: “Ece missed the first bus because she left home late. She waited fifteen minutes, then she took the next bus. She arrived at work at nine twenty and apologised to her manager.”\n\nFirst listen for the problem. Then listen again for the time and the solution. Repeat the three Past Simple verbs: missed, waited, took.",
+      "questions": [
+        { "id": "l1", "prompt": "Why did Ece miss the first bus?", "choices": ["She left home late.", "The bus was full.", "She lost her ticket.", "She was ill."], "answerIndex": 0 },
+        { "id": "l2", "prompt": "How long did Ece wait?", "choices": ["Five minutes", "Fifteen minutes", "Thirty minutes", "One hour"], "answerIndex": 1 },
+        { "id": "l3", "prompt": "What time did Ece arrive at work?", "choices": ["At 8:20", "At 9:00", "At 9:20", "At 10:20"], "answerIndex": 2 }
+      ]
+    },
+    {
       "id": "mini-interview",
       "title": "Mini interview",
       "function": "speaking-roleplay",
-      "content": "Ask and answer these aloud: “What did you do yesterday?” “When did you start?” “What time did you finish?” Then add one follow-up question with who, where, or why."
+      "content": "Ask and answer these aloud: “What did you do yesterday?” “When did you start?” “What time did you finish?” Then add one follow-up question with who, where, or why.\n\nFor a fuller answer, use this pattern: “I ___ yesterday. I started at ___. I was with ___. I chose it because ___.” Ask your own follow-up question before you move on."
+    },
+    {
+      "id": "challenge",
+      "title": "Question-maker challenge",
+      "function": "challenge",
+      "content": "Turn each answer idea into a complete past question. Then make a four-question interview about someone’s last weekend. Include one question with when, one with what time, one with who or where, and one with why.",
+      "questions": [
+        { "id": "c1", "prompt": "Choose the correct order.", "choices": ["Where did they stay?", "Where they did stay?", "Where did stay they?", "Where they stayed did?"], "answerIndex": 0 },
+        { "id": "c2", "prompt": "Complete: “What time ___ the meeting finish?”", "choices": ["was", "did", "do", "were"], "answerIndex": 1 },
+        { "id": "c3", "prompt": "Which question asks about a person?", "choices": ["Where did you go?", "Why did you go?", "Who did you go with?", "What time did you go?"], "answerIndex": 2 },
+        { "id": "c4", "prompt": "Choose the best answer to “When did you call her?”", "choices": ["At her office.", "Because I needed help.", "With my brother.", "On Monday evening."], "answerIndex": 3 },
+        { "id": "c5", "prompt": "Which question is a subject question?", "choices": ["Who sent the message?", "Who did you send the message to?", "Who did send the message?", "Who were you send the message to?"], "answerIndex": 0 }
+      ]
     }
   ]
 }

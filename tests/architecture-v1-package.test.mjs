@@ -57,9 +57,16 @@ test("published future packages remain privacy-safe, validated learning material
   packages.forEach((pkg, index) => {
     assert.equal(pkg.id, ids[index]);
     assert.equal(validateFuturePackage(pkg), true);
+    assert.ok(pkg.sections.length >= 6);
     assert.equal(JSON.stringify(pkg).includes("Savascan"), false);
     assert.equal(JSON.stringify(pkg).includes("Zoom"), false);
   });
+});
+test("future packages use accessible section tabs and retain device-local progress", async () => {
+  const renderer = await readFile(new URL("../docs/homeworks/package.js", import.meta.url), "utf8");
+  assert.match(renderer, /role=\"tablist\"/);
+  assert.match(renderer, /role=\"tabpanel\"/);
+  assert.match(renderer, /progress\.activeSection/);
 });
 test("future packages require each approved Architecture v1 id", () => {
   expectFail(() => ({ ...basePackage(), policyVersion: "sumeyye-weekend-monday@1" }), "other student policy fails");

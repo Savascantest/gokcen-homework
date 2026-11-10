@@ -11,7 +11,7 @@
       "id": "grammar",
       "title": "Past Simple or Past Continuous?",
       "function": "grammar",
-      "content": "Use Past Continuous for an action in progress and Past Simple for a shorter action that happened during it. Türkçe ipucu: devam eden eylem için was/were + -ing kullan.",
+      "content": "Use Past Continuous for a background action in progress: I was driving home. Use Past Simple for a completed action: The phone rang. Together: I was driving home when the phone rang.\n\nTürkçe ipucu: devam eden eylem için was/were + -ing; kısa, biten olay için Past Simple kullan. when genellikle kısa olayı, while devam eden eylemi bağlar.",
       "questions": [
         { "id": "g1", "prompt": "I ___ dinner when the phone rang.", "choices": ["was making", "made", "make", "am making"], "answerIndex": 0 },
         { "id": "g2", "prompt": "While they ___ home, it started to rain.", "choices": ["walk", "were walking", "walked", "are walking"], "answerIndex": 1 },
@@ -21,21 +21,58 @@
       ]
     },
     {
-      "id": "story",
+      "id": "vocabulary",
+      "title": "Story-building words",
+      "function": "vocabulary",
+      "content": "Use suddenly for an unexpected event, meanwhile for a second action at the same time, and eventually for the final result. Example: “I was waiting for the bus. Meanwhile, my friend was looking for a café. Suddenly, it began to rain. Eventually, we found shelter.”\n\nSay each word, then make one true sentence about your own week.",
+      "questions": [
+        { "id": "v1", "prompt": "Which word introduces an unexpected event?", "choices": ["Suddenly", "Meanwhile", "Eventually", "Usually"], "answerIndex": 0 },
+        { "id": "v2", "prompt": "Which word means ‘at the same time’?", "choices": ["Finally", "Meanwhile", "Yesterday", "Already"], "answerIndex": 1 },
+        { "id": "v3", "prompt": "Which sentence uses eventually correctly?", "choices": ["Eventually, I was cooking at six.", "Eventually, the phone rang while I slept.", "Eventually, we arrived after a long journey.", "Eventually, she is working now."], "answerIndex": 2 },
+        { "id": "v4", "prompt": "Choose the best connector: “I was studying. ___, my brother was watching television.”", "choices": ["Suddenly", "Eventually", "Yesterday", "Meanwhile"], "answerIndex": 3 }
+      ]
+    },
+    {
+      "id": "reading",
       "title": "A small interruption",
       "function": "reading",
-      "content": "Read: “Mina was walking to the station when she saw an old friend. They talked for five minutes, then Mina caught the next train.” Notice the long action and the short events.",
+      "content": "Read: “At 6:15, Arda was walking to the station. He was listening to a podcast and checking the time. Suddenly, he saw that he had left his ticket at home. He ran back, found it on the table, and caught the next train. He arrived ten minutes late, but his colleague was still waiting.”\n\nFirst, underline the actions in progress. Then circle the short events that changed the story.",
       "questions": [
-        { "id": "r1", "prompt": "What was Mina doing first?", "choices": ["She was walking to the station.", "She caught a train.", "She was calling a friend.", "She was waiting at home."], "answerIndex": 0 },
-        { "id": "r2", "prompt": "What interrupted Mina’s walk?", "choices": ["The train left.", "She saw an old friend.", "It began to snow.", "Her phone rang."], "answerIndex": 1 },
-        { "id": "r3", "prompt": "What did Mina do after the conversation?", "choices": ["She went home.", "She wrote a message.", "She caught the next train.", "She looked for a taxi."], "answerIndex": 2 }
+        { "id": "r1", "prompt": "What was Arda doing at 6:15?", "choices": ["He was walking to the station.", "He was buying a ticket.", "He was waiting for a colleague.", "He was running home."], "answerIndex": 0 },
+        { "id": "r2", "prompt": "What problem did Arda notice?", "choices": ["The train was cancelled.", "He had left his ticket at home.", "His colleague was late.", "His podcast stopped."], "answerIndex": 1 },
+        { "id": "r3", "prompt": "What did Arda do after he noticed the problem?", "choices": ["He called a taxi.", "He bought another ticket.", "He ran back home.", "He waited at the station."], "answerIndex": 2 },
+        { "id": "r4", "prompt": "Which statement is true at the end?", "choices": ["Arda missed every train.", "His colleague left early.", "Arda arrived exactly on time.", "His colleague was still waiting."], "answerIndex": 3 }
+      ]
+    },
+    {
+      "id": "listening",
+      "title": "Listen for the interruption",
+      "function": "listening",
+      "content": "Ask a study partner or your device’s read-aloud tool to read this twice. First time: listen for the main idea. Second time: listen for the two actions. “Leyla was preparing a presentation when her laptop stopped working. She called a friend, and together they found a copy of the file in her email. Later, Leyla gave the presentation successfully.”\n\nPause after each sentence and repeat it with clear stress on was preparing, stopped, called, and found.",
+      "questions": [
+        { "id": "l1", "prompt": "What was Leyla doing when the problem happened?", "choices": ["Preparing a presentation", "Taking a train", "Cooking dinner", "Writing an email"], "answerIndex": 0 },
+        { "id": "l2", "prompt": "What stopped working?", "choices": ["Her phone", "Her laptop", "Her email", "Her train"], "answerIndex": 1 },
+        { "id": "l3", "prompt": "Where did Leyla find a copy of the file?", "choices": ["In a café", "On a train", "In her email", "At her office"], "answerIndex": 2 }
       ]
     },
     {
       "id": "speaking-roleplay",
       "title": "Tell a short story",
       "function": "speaking-roleplay",
-      "content": "Say three sentences aloud: 1) what you were doing, 2) what happened, and 3) what you did next. Example: “I was leaving work when I met a colleague. We talked, and then I went home.”"
+      "content": "Speak for one minute. Use this frame: 1) “Yesterday, I was …” 2) “Then / suddenly, … happened.” 3) “After that, I …”\n\nExample: “Yesterday, I was leaving work when I met a colleague. We talked for a few minutes. After that, I took the bus home.” Record yourself if you can, then listen once and check: Did you use was/were + -ing? Did you include one finished Past Simple action?"
+    },
+    {
+      "id": "challenge",
+      "title": "Final mixed challenge",
+      "function": "challenge",
+      "content": "Before choosing, say the full sentence aloud. For a final written challenge, write four sentences about a real interruption: one background action, one short event, one response, and one final result.",
+      "questions": [
+        { "id": "c1", "prompt": "Choose the natural sentence.", "choices": ["I was sleeping when the alarm rang.", "I sleeping when the alarm was ring.", "I was sleep when the alarm rang.", "I slept when the alarm was ringing."], "answerIndex": 0 },
+        { "id": "c2", "prompt": "Complete: “While I ___ for the doctor, I read a magazine.”", "choices": ["wait", "was waiting", "waited", "am waiting"], "answerIndex": 1 },
+        { "id": "c3", "prompt": "Choose the best ending: “The children were playing outside when …”", "choices": ["they were happy.", "it was yesterday.", "it began to snow.", "they play every day."], "answerIndex": 2 },
+        { "id": "c4", "prompt": "Which question is correct?", "choices": ["What you were doing at eight?", "What did you doing at eight?", "What were you do at eight?", "What were you doing at eight?"], "answerIndex": 3 },
+        { "id": "c5", "prompt": "Choose the clearest story order.", "choices": ["background action → interruption → response", "response → background action → interruption", "interruption → background action → yesterday", "meanwhile → was → did"], "answerIndex": 0 }
+      ]
     }
   ]
 }
