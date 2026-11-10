@@ -1,0 +1,41 @@
+{
+  "id": "2026-09-16-m4q7r2v9k6",
+  "date": "2026-09-16",
+  "title": "Past actions: what happened and what was in progress",
+  "policyVersion": "gokcen-lesson-evidence-first@1",
+  "templateContractVersion": "gokcen-six-section-interactive@1",
+  "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1",
+  "learnerLanguagePolicy": "english-first-targeted-turkish-grammar-support",
+  "sections": [
+    {
+      "id": "grammar",
+      "title": "Past Simple or Past Continuous?",
+      "function": "grammar",
+      "content": "Use Past Continuous for an action in progress and Past Simple for a shorter action that happened during it. Türkçe ipucu: devam eden eylem için was/were + -ing kullan.",
+      "questions": [
+        { "id": "g1", "prompt": "I ___ dinner when the phone rang.", "choices": ["was making", "made", "make", "am making"], "answerIndex": 0 },
+        { "id": "g2", "prompt": "While they ___ home, it started to rain.", "choices": ["walk", "were walking", "walked", "are walking"], "answerIndex": 1 },
+        { "id": "g3", "prompt": "The lights went out while we ___ a film.", "choices": ["watch", "were watched", "were watching", "watched"], "answerIndex": 2 },
+        { "id": "g4", "prompt": "Which sentence describes a finished action?", "choices": ["I was reading at eight.", "They were waiting outside.", "She was cooking dinner.", "He called me yesterday."], "answerIndex": 3 },
+        { "id": "g5", "prompt": "Choose the best pair: “I ___ my keys while I ___ for the bus.”", "choices": ["dropped / was waiting", "was dropping / waited", "drop / wait", "was dropped / was waiting"], "answerIndex": 0 }
+      ]
+    },
+    {
+      "id": "story",
+      "title": "A small interruption",
+      "function": "reading",
+      "content": "Read: “Mina was walking to the station when she saw an old friend. They talked for five minutes, then Mina caught the next train.” Notice the long action and the short events.",
+      "questions": [
+        { "id": "r1", "prompt": "What was Mina doing first?", "choices": ["She was walking to the station.", "She caught a train.", "She was calling a friend.", "She was waiting at home."], "answerIndex": 0 },
+        { "id": "r2", "prompt": "What interrupted Mina’s walk?", "choices": ["The train left.", "She saw an old friend.", "It began to snow.", "Her phone rang."], "answerIndex": 1 },
+        { "id": "r3", "prompt": "What did Mina do after the conversation?", "choices": ["She went home.", "She wrote a message.", "She caught the next train.", "She looked for a taxi."], "answerIndex": 2 }
+      ]
+    },
+    {
+      "id": "speaking-roleplay",
+      "title": "Tell a short story",
+      "function": "speaking-roleplay",
+      "content": "Say three sentences aloud: 1) what you were doing, 2) what happened, and 3) what you did next. Example: “I was leaving work when I met a colleague. We talked, and then I went home.”"
+    }
+  ]
+}

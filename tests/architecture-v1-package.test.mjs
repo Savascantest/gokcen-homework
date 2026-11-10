@@ -51,6 +51,16 @@ test("the historical 2 September static workspace remains the legacy default", a
   assert.match(html, /02 SEPTEMBER 2026/);
   assert.match(app, /gokcen-homework-full-v1/);
 });
+test("published future packages remain privacy-safe, validated learning material", async () => {
+  const ids = ["2026-09-16-m4q7r2v9k6", "2026-11-04-c7n2p8v4r6"];
+  const packages = await Promise.all(ids.map(async (id) => JSON.parse(await readFile(new URL(`../docs/homeworks/${id}/homework.json`, import.meta.url), "utf8"))));
+  packages.forEach((pkg, index) => {
+    assert.equal(pkg.id, ids[index]);
+    assert.equal(validateFuturePackage(pkg), true);
+    assert.equal(JSON.stringify(pkg).includes("Savascan"), false);
+    assert.equal(JSON.stringify(pkg).includes("Zoom"), false);
+  });
+});
 test("future packages require each approved Architecture v1 id", () => {
   expectFail(() => ({ ...basePackage(), policyVersion: "sumeyye-weekend-monday@1" }), "other student policy fails");
   expectFail(() => ({ ...basePackage(), templateContractVersion: "wrong@1" }), "wrong template fails");

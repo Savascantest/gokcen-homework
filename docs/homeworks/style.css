@@ -13,12 +13,26 @@ h2 { margin-top: 0; }
 .archive-card { display: grid; gap: 5px; }
 .archive-card span { color: #1c7b73; font-size: .8rem; font-weight: 700; letter-spacing: .06em; }
 .archive-card strong { font-size: 1.2rem; }
-fieldset { border: 0; display: grid; gap: 8px; margin: 16px 0; padding: 0; }
+fieldset { border: 0; display: grid; gap: 8px; margin: 20px 0; padding: 0; }
 legend { font-weight: 700; margin-bottom: 8px; }
 button { background: #15746d; border: 0; border-radius: 8px; color: #fff; cursor: pointer; font: 700 .9rem Arial, sans-serif; padding: 10px 13px; text-align: left; }
+button:focus-visible, a:focus-visible { outline: 3px solid #d0783c; outline-offset: 3px; }
 .complete-section { background: #285b5a; margin-top: 10px; }
 .reset-progress { background: #285b5a; }
+.skip-link { left: -9999px; position: absolute; }
+.skip-link:focus { background: #fff; left: 16px; padding: 10px; top: 16px; z-index: 1; }
+.package-toolbar { align-items: center; display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0 16px; }
+.package-progress { background: #e8f2ef; border-radius: 999px; color: #285b5a; padding: 10px 14px; }
+.section-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+.section-nav a, .section-actions a { color: #123f42; font-weight: 700; }
+.section-nav a { background: #fff; border: 1px solid #b8d1cb; border-radius: 999px; padding: 8px 11px; text-decoration: none; }
+.section-step { color: #1c7b73; font-size: .75rem; font-weight: 700; letter-spacing: .1em; margin: 0 0 6px; }
+.question-number { color: #1c7b73; }
+.answer-options { display: grid; gap: 8px; }
+.answer-options button:not(:disabled):hover { background: #0d5a55; }
+.section-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 14px; margin-top: 16px; }
 .selected-answer { background: #d0783c; }
 .correct-answer { background: #277a4b; }
 .incorrect-answer { background: #a33e36; }
 .question-feedback { color: #285b5a; font-weight: 700; min-height: 1.5em; }
+@media (max-width: 520px) { .archive-shell { padding: 34px 16px; } .archive-card, .future-section, .empty-archive { padding: 16px; } .package-toolbar, .section-actions { align-items: stretch; flex-direction: column; } .package-toolbar button, .section-actions button { width: 100%; } }

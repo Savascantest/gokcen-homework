@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "2026-11-04-c7n2p8v4r6",
+    "date": "2026-11-04",
+    "title": "Questions about past events",
+    "path": "./2026-11-04-c7n2p8v4r6/homework.json",
+    "policyVersion": "gokcen-lesson-evidence-first@1",
+    "templateContractVersion": "gokcen-six-section-interactive@1",
+    "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1"
+  },
+  {
+    "id": "2026-09-16-m4q7r2v9k6",
+    "date": "2026-09-16",
+    "title": "Past actions: what happened and what was in progress",
+    "path": "./2026-09-16-m4q7r2v9k6/homework.json",
+    "policyVersion": "gokcen-lesson-evidence-first@1",
+    "templateContractVersion": "gokcen-six-section-interactive@1",
+    "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-04-c7n2p8v4r6",
+  "date": "2026-11-04",
+  "title": "Questions about past events",
+  "policyVersion": "gokcen-lesson-evidence-first@1",
+  "templateContractVersion": "gokcen-six-section-interactive@1",
+  "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1",
+  "learnerLanguagePolicy": "english-first-targeted-turkish-grammar-support",
+  "sections": [
+    {
+      "id": "question-forms",
+      "title": "Build clear past questions",
+      "function": "grammar",
+      "content": "For most past questions, use question word + did + subject + base verb. Türkçe ipucu: did’den sonra fiilin yalın hâli gelir.",
+      "questions": [
+        { "id": "q1", "prompt": "Choose the correct question.", "choices": ["What did you do yesterday?", "What you did yesterday?", "What did you yesterday do?", "What were you did yesterday?"], "answerIndex": 0 },
+        { "id": "q2", "prompt": "Which question asks about an exact clock time?", "choices": ["When did the class start?", "What time did the class start?", "Which class did start?", "What did the class start?"], "answerIndex": 1 },
+        { "id": "q3", "prompt": "Complete the question: “Where ___ you meet your friend?”", "choices": ["were", "do", "did", "was"], "answerIndex": 2 },
+        { "id": "q4", "prompt": "Which answer fits “Who called you?”", "choices": ["At six o’clock.", "At the office.", "Because I was busy.", "My neighbour called me."], "answerIndex": 3 },
+        { "id": "q5", "prompt": "Choose the natural question about a reason.", "choices": ["Why did she leave early?", "Why she left early?", "Why did she left early?", "Why was she leave early?"], "answerIndex": 0 }
+      ]
+    },
+    {
+      "id": "when-or-what-time",
+      "title": "When or what time?",
+      "function": "vocabulary",
+      "content": "Use when for a general time or date. Use what time when you need the exact hour and minutes.",
+      "questions": [
+        { "id": "w1", "prompt": "Choose the best question for “At 7:30.”", "choices": ["When did the shop open?", "What time did the shop open?", "Which shop opened?", "Who opened the shop?"], "answerIndex": 1 },
+        { "id": "w2", "prompt": "Choose the best question for “Last Friday.”", "choices": ["What time did you travel?", "Which time did you travel?", "When did you travel?", "Who did you travel?"], "answerIndex": 2 }
+      ]
+    },
+    {
+      "id": "mini-interview",
+      "title": "Mini interview",
+      "function": "speaking-roleplay",
+      "content": "Ask and answer these aloud: “What did you do yesterday?” “When did you start?” “What time did you finish?” Then add one follow-up question with who, where, or why."
+    }
+  ]
+}
