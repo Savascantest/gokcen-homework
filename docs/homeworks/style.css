@@ -6,6 +6,13 @@ h1 { font-size: clamp(2.2rem, 7vw, 4rem); margin: 0 0 12px; }
 h2 { margin-top: 0; }
 .eyebrow { color: #1c7b73; font-size: .75rem; font-weight: 700; letter-spacing: .13em; }
 .lead { color: #5d7471; font-size: 1.1rem; max-width: 620px; }
+.lesson-header { align-items: center; border-bottom: 1px solid #d5e2df; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; margin: -18px -18px 24px; padding: 0 18px 16px; }
+.studio-mark { color: #123f42; font-size: .8rem; font-weight: 800; letter-spacing: .1em; text-decoration: none; }
+.studio-mark span { color: #1c7b73; font-weight: 700; }
+.lesson-picker { color: #285b5a; display: grid; font-size: .76rem; font-weight: 800; gap: 5px; letter-spacing: .06em; text-transform: uppercase; }
+.lesson-picker select { background: #fff; border: 1px solid #b8d1cb; border-radius: 9px; color: #123f42; font: 700 .9rem Arial, sans-serif; max-width: min(100%, 430px); padding: 9px 32px 9px 10px; text-transform: none; }
+.archive-picker { margin-top: 24px; max-width: 560px; }
+.picker-help { color: #5d7471; margin-top: 14px; max-width: 560px; }
 .archive-link, .archive-card { color: #123f42; text-decoration: none; }
 .archive-link { font-weight: 700; }
 .archive-list, .future-sections { display: grid; gap: 16px; margin-top: 28px; }
