@@ -13,6 +13,46 @@ h2 { margin-top: 0; }
 .lesson-picker select { background: #fff; border: 1px solid #b8d1cb; border-radius: 9px; color: #123f42; font: 700 .9rem Arial, sans-serif; max-width: min(100%, 430px); padding: 9px 32px 9px 10px; text-transform: none; }
 .archive-picker { margin-top: 24px; max-width: 560px; }
 .picker-help { color: #5d7471; margin-top: 14px; max-width: 560px; }
+.workspace-header { align-items: center; border-bottom: 1px solid #d5e2df; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; margin: 0 0 28px; padding: 0 0 16px; }
+.workspace-main { margin: 0 auto; max-width: 1040px; }
+.workspace-hero { background: linear-gradient(135deg, #e7f5f1, #eef4ff); border: 1px solid #d4e7e0; border-radius: 22px; margin-bottom: 20px; padding: 28px; }
+.workspace-hero h1 { margin: 5px 0 10px; }
+.workspace-hero p { color: #425d59; font-size: 1.06rem; line-height: 1.55; max-width: 760px; }
+.workspace-hero output { background: #fff; border: 1px solid #d5e2df; border-radius: 999px; color: #285b5a; display: inline-block; font-weight: 700; margin-top: 8px; padding: 8px 12px; }
+.workspace-tabs { background: #fff; border: 1px solid #d5e2df; border-radius: 16px; display: grid; gap: 6px; grid-template-columns: repeat(6, minmax(0, 1fr)); margin-bottom: 24px; padding: 6px; }
+.workspace-tabs button { background: transparent; color: #285b5a; padding: 11px 8px; text-align: center; }
+.workspace-tabs button[aria-selected="true"] { background: #123f42; color: #fff; }
+.workspace-content { background: #fff; border: 1px solid #d5e2df; border-radius: 20px; box-shadow: 0 7px 24px #143a3315; padding: 28px; }
+.workspace-content h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); }
+.lesson-notes { display: grid; gap: 16px; }
+.note-block, .explanation, .reading-panel, .listening-card, .exercise-card { border: 1px solid #d8e6e2; border-radius: 16px; padding: 18px; }
+.note-block h3, .reading-panel h3 { margin: 0 0 8px; }
+.note-block p, .explanation p, .reading-text, .listening-card p { line-height: 1.65; }
+.example-line { background: #eef7f4; border-radius: 10px; color: #285b5a; font-weight: 700; padding: 10px; }
+.study-tip { background: #fff5dc; border-radius: 14px; line-height: 1.55; padding: 16px; }
+.flashcard-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+.flashcard { background: #f7fbfa; border: 1px solid #bddbd3; color: #123f42; min-height: 170px; padding: 18px; text-align: left; }
+.flashcard:hover { background: #e9f5f1; }
+.flash-front, .flash-back { display: grid; gap: 10px; }
+.flash-front b { font-size: 1.25rem; }
+.flash-front small { color: #315b55; font-size: .94rem; }
+.flash-front em { color: #58726d; font-size: .9rem; }
+.flash-back { align-content: center; font-size: 1.1rem; min-height: 130px; text-align: center; }
+.practice-heading { margin-top: 32px; }
+.reading-panel { margin-top: 20px; }
+.reading-text { white-space: pre-line; }
+.exercise-list { display: grid; gap: 12px; margin-top: 20px; }
+.exercise-card { background: #fcfefd; }
+.exercise-card p { line-height: 1.5; margin-top: 0; }
+.exercise-card.is-correct { border-color: #58a273; background: #f0fbf3; }
+.exercise-card.is-wrong { border-color: #d0783c; background: #fff8ed; }
+.check-row { align-items: center; display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.secondary-action { background: #fff; border: 1px solid #557973; color: #285b5a; }
+.answer-feedback { color: #285b5a; font-weight: 700; margin-bottom: 0; }
+.listening-card { background: #f2f5ff; border-color: #d1dcfb; }
+.listening-link { background: #284fa1; border-radius: 9px; color: #fff; display: inline-block; font-weight: 700; padding: 11px 14px; text-decoration: none; }
+.resource-note { color: #58726d; font-size: .88rem; margin-bottom: 0; }
+@media (max-width: 760px) { .workspace-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); } .workspace-content { padding: 18px; } .workspace-hero { padding: 20px; } }
 .archive-link, .archive-card { color: #123f42; text-decoration: none; }
 .archive-link { font-weight: 700; }
 .archive-list, .future-sections { display: grid; gap: 16px; margin-top: 28px; }

@@ -63,11 +63,18 @@ test("published future packages remain privacy-safe, validated learning material
   });
 });
 test("future packages use accessible section tabs and retain device-local progress", async () => {
-  const renderer = await readFile(new URL("../docs/homeworks/package.js", import.meta.url), "utf8");
+  const [renderer, curriculum] = await Promise.all([
+    readFile(new URL("../docs/homeworks/workspace.js", import.meta.url), "utf8"),
+    readFile(new URL("../docs/homeworks/curriculum.js", import.meta.url), "utf8")
+  ]);
   assert.match(renderer, /role=\"tablist\"/);
   assert.match(renderer, /role=\"tabpanel\"/);
-  assert.match(renderer, /progress\.activeSection/);
+  assert.match(renderer, /state\.tab/);
   assert.match(renderer, /lesson-select/);
+  assert.match(renderer, /flashcard/);
+  assert.match(curriculum, /britishcouncil\.org/);
+  assert.equal(curriculum.includes("Savascan"), false);
+  assert.equal(curriculum.includes("Zoom"), false);
 });
 test("future packages require each approved Architecture v1 id", () => {
   expectFail(() => ({ ...basePackage(), policyVersion: "sumeyye-weekend-monday@1" }), "other student policy fails");
