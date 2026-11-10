@@ -43,12 +43,12 @@ test("valid future package supports flexible section omission and concise Turkis
   pkg.sections[0].content = "Use the past forms in context. Türkçe not: when = -dığında.";
   assert.equal(validateFuturePackage(pkg), true);
 });
-test("the historical 2 September static workspace remains the legacy default", async () => {
+test("the newest lesson workspace is the default while the legacy workspace is retained", async () => {
   const [html, app] = await Promise.all([
     readFile(new URL("../docs/index.html", import.meta.url), "utf8"),
     readFile(new URL("../docs/app.js", import.meta.url), "utf8")
   ]);
-  assert.match(html, /02 SEPTEMBER 2026/);
+  assert.match(html, /homeworks\/package\.html\?id=2026-11-04-c7n2p8v4r6/);
   assert.match(app, /gokcen-homework-full-v1/);
 });
 test("published future packages remain privacy-safe, validated learning material", async () => {
