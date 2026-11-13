@@ -52,5 +52,32 @@
     "policyVersion": "gokcen-lesson-evidence-first@1",
     "templateContractVersion": "gokcen-six-section-interactive@1",
     "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1"
+  },
+  {
+    "id": "2026-07-07-p2v8m4r6x1",
+    "date": "2026-07-07",
+    "title": "Sports, preferences and questions",
+    "path": "./2026-07-07-p2v8m4r6x1/homework.json",
+    "policyVersion": "gokcen-lesson-evidence-first@1",
+    "templateContractVersion": "gokcen-six-section-interactive@1",
+    "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1"
+  },
+  {
+    "id": "2026-06-05-w7k3q9n2f6",
+    "date": "2026-06-05",
+    "title": "Plans, free time and useful conversations",
+    "path": "./2026-06-05-w7k3q9n2f6/homework.json",
+    "policyVersion": "gokcen-lesson-evidence-first@1",
+    "templateContractVersion": "gokcen-six-section-interactive@1",
+    "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1"
+  },
+  {
+    "id": "2026-06-03-b5t1h8y4c7",
+    "date": "2026-06-03",
+    "title": "First impressions, introductions and friendly questions",
+    "path": "./2026-06-03-b5t1h8y4c7/homework.json",
+    "policyVersion": "gokcen-lesson-evidence-first@1",
+    "templateContractVersion": "gokcen-six-section-interactive@1",
+    "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1"
   }
 ]

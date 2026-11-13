@@ -1,4 +1,4 @@
-export const EFFECTIVE_DATE = "2026-07-31";
+export const EFFECTIVE_DATE = "2026-06-03";
 export const POLICY_VERSION = "gokcen-lesson-evidence-first@1";
 export const TEMPLATE_CONTRACT_VERSION = "gokcen-six-section-interactive@1";
 export const ASSESSMENT_POLICY_VERSION = "gokcen-formative-practice-and-challenge@1";
