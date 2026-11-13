@@ -52,7 +52,7 @@ test("the newest lesson workspace is the default while the legacy workspace is r
   assert.match(app, /gokcen-homework-full-v1/);
 });
 test("published future packages remain privacy-safe, validated learning material", async () => {
-  const ids = ["2026-09-14-r5n8c2z6w3", "2026-09-16-m4q7r2v9k6", "2026-11-04-c7n2p8v4r6"];
+  const ids = ["2026-07-31-n4c8y1q6z3", "2026-08-11-k9r3w6p2t5", "2026-09-02-h6q4m9x2v7", "2026-09-14-r5n8c2z6w3", "2026-09-16-m4q7r2v9k6", "2026-11-04-c7n2p8v4r6"];
   const packages = await Promise.all(ids.map(async (id) => JSON.parse(await readFile(new URL(`../docs/homeworks/${id}/homework.json`, import.meta.url), "utf8"))));
   packages.forEach((pkg, index) => {
     assert.equal(pkg.id, ids[index]);

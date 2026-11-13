@@ -25,5 +25,32 @@
     "policyVersion": "gokcen-lesson-evidence-first@1",
     "templateContractVersion": "gokcen-six-section-interactive@1",
     "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1"
+  },
+  {
+    "id": "2026-09-02-h6q4m9x2v7",
+    "date": "2026-09-02",
+    "title": "Past Simple, time expressions and everyday stories",
+    "path": "./2026-09-02-h6q4m9x2v7/homework.json",
+    "policyVersion": "gokcen-lesson-evidence-first@1",
+    "templateContractVersion": "gokcen-six-section-interactive@1",
+    "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1"
+  },
+  {
+    "id": "2026-08-11-k9r3w6p2t5",
+    "date": "2026-08-11",
+    "title": "Clear everyday sentences: word order and time phrases",
+    "path": "./2026-08-11-k9r3w6p2t5/homework.json",
+    "policyVersion": "gokcen-lesson-evidence-first@1",
+    "templateContractVersion": "gokcen-six-section-interactive@1",
+    "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1"
+  },
+  {
+    "id": "2026-07-31-n4c8y1q6z3",
+    "date": "2026-07-31",
+    "title": "Describing people and things: adjectives and state verbs",
+    "path": "./2026-07-31-n4c8y1q6z3/homework.json",
+    "policyVersion": "gokcen-lesson-evidence-first@1",
+    "templateContractVersion": "gokcen-six-section-interactive@1",
+    "assessmentPolicyVersion": "gokcen-formative-practice-and-challenge@1"
   }
 ]
