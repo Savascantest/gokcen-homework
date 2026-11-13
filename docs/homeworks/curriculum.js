@@ -37,3 +37,60 @@ window.GOKCEN_CURRICULUM = {
   '2026-09-16-m4q7r2v9k6': {summary:'A focused review of actions in progress, interruptions, and clear storytelling in the past.',notes:{title:'An action in progress and an interruption',points:[{title:'The background',text:'Use Past Continuous to set the scene.',example:'I was travelling home.'},{title:'The interruption',text:'Use Past Simple for a shorter event that changed the situation.',example:'The train stopped.'},{title:'The response',text:'Continue the story with completed Past Simple actions.',example:'I called the office and explained the delay.'}]},grammar:{title:'Tell a clear past story',explanation:'A good past story often has three parts: background action, interruption, and response.',example:'I was studying when the lights went out, so I used my phone torch.',questions:pastGrammar},vocabulary:[...pastVocab.slice(3),...pastVocab.slice(0,3)],readings:pastReadings('the station area'),listening:{title:'A2 listening: changing plans',instructions:'Use the British Council A2 listening library. Choose “Changing plans”, listen twice, and notice how speakers explain a problem and make a new arrangement.',url:'https://learnenglish.britishcouncil.org/free-resources/listening/a2/changing-plans',questions:[q('What grammar is useful for an action in progress?', ['Past Continuous','Future perfect','Present perfect only','Imperative'], 'Past Continuous'),q('Which can interrupt a background action?', ['A short Past Simple event','A long future plan','A dictionary','A number'], 'A short Past Simple event'),q('Which phrase explains a delay?', ['I called and explained the delay.','I am delay yesterday.','Did delay I.','The delay is call.'], 'I called and explained the delay.'),q('What should you listen for on the second time?', ['Specific details','Only names','Nothing new','The page colour'], 'Specific details'),q('What is a helpful response to changed plans?', ['Suggest another time','Stop the conversation','Ignore the person','Use no questions'], 'Suggest another time')]}},
   '2026-11-04-c7n2p8v4r6': {summary:'A full lesson on forming clear questions about past events, exact times, places, people, and reasons.',notes:{title:'Questions about past events',points:[{title:'Past questions',text:'Use question word + did + subject + base verb for most past questions.',example:'Where did you go?'},{title:'Exact time',text:'Use what time for an exact hour; use when for a general date or time.',example:'What time did the meeting start?'},{title:'Who as the subject',text:'When who does the action, do not add did.',example:'Who called you?'}]},grammar:{title:'Build accurate questions',explanation:'Start with the question word. For most past questions, add did, the subject, and the base verb.',example:'Why did she leave early? / Who sent the message?',questions:questionGrammar},vocabulary:questionVocab,readings:questionReadings,listening:{title:'A2 listening: meetings and plans',instructions:'Open the British Council A2 listening library and choose a meeting or changing-plans activity. Listen twice and note one question about a time and one question about a reason.',url:'https://learnenglish.britishcouncil.org/free-resources/listening/a2',questions:[q('Which question asks for an exact hour?', ['What time did it start?','When did it start?','Why did it start?','Who started it?'], 'What time did it start?'),q('Which question asks for a reason?', ['Why did it change?','Where did it change?','Who did it change?','What time did it change?'], 'Why did it change?'),q('Which question asks about a place?', ['Where did they meet?','When did they meet?','Why did they meet?','Who did they meet?'], 'Where did they meet?'),q('Which word chooses from a small group?', ['Which','When','Why','Who'], 'Which'),q('What should you do after listening?', ['Answer with evidence from the audio','Guess without listening','Skip the activity','Translate every word first'], 'Answer with evidence from the audio')]}}
 };
+
+const vocabularyDetails = {
+  'chance meeting': { synonym: 'unexpected encounter', turkishExample: 'Eski bir sınıf arkadaşımla tesadüfi bir karşılaşma yaşadım.' },
+  'run into': { synonym: 'meet by chance', turkishExample: 'İstasyona yakın bir yerde birbirimizle tesadüfen karşılaştık.' },
+  memorable: { synonym: 'unforgettable', turkishExample: 'Unutulmaz bir öğleden sonraydı.' },
+  delay: { synonym: 'hold-up', turkishExample: 'Trenin yirmi dakikalık bir gecikmesi vardı.' },
+  explain: { synonym: 'clarify', turkishExample: 'Aradım ve sorunu açıkladım.' },
+  eventually: { synonym: 'finally', turkishExample: 'Sonunda tren tekrar hareket etmeye başladı.' },
+  meanwhile: { synonym: 'at the same time', turkishExample: 'Bu sırada arkadaşım kafede bekliyordu.' },
+  appointment: { synonym: 'arrangement', turkishExample: 'Randevumu cumaya erteledim.' },
+  'what time': { synonym: 'at what hour', turkishExample: 'Film saat kaçta başladı?' },
+  when: { synonym: 'at which time', turkishExample: 'Ne zaman geldin?' },
+  where: { synonym: 'in which place', turkishExample: 'Nerede buluştunuz?' },
+  why: { synonym: 'for what reason', turkishExample: 'Neden erken ayrıldı?' },
+  which: { synonym: 'what one', turkishExample: 'Hangi defteri aldın?' },
+  'follow-up question': { synonym: 'extra question', turkishExample: 'Saat kaçta bitti diye devam sorusu sordum.' },
+  exact: { synonym: 'precise', turkishExample: 'Lütfen tam saati söyle.' },
+  reply: { synonym: 'response', turkishExample: 'Hızlı bir cevap gönderdi.' }
+};
+
+Object.values(window.GOKCEN_CURRICULUM).forEach((course) => {
+  course.vocabulary.forEach((card) => Object.assign(card, vocabularyDetails[card.word] || {}));
+});
+
+const pastStoryGuide = {
+  intro: 'Use two past forms to make a story clear: one action was already happening, then one shorter event changed the situation.',
+  patterns: [
+    { label: 'The background action', parts: [{ kind: 'subject', text: 'subject' }, { kind: 'auxiliary', text: 'was / were' }, { kind: 'verb', text: 'verb + -ing' }], note: 'Use this for the longer action in progress.' },
+    { label: 'The interruption', parts: [{ kind: 'connector', text: 'when' }, { kind: 'subject', text: 'subject' }, { kind: 'verb', text: 'past verb' }], note: 'Use this for the shorter completed event.' }
+  ],
+  examples: [
+    { parts: [{ kind: 'subject', text: 'I' }, { kind: 'auxiliary', text: 'was' }, { kind: 'verb', text: 'walking' }, { kind: 'time', text: 'home' }, { kind: 'connector', text: 'when' }, { kind: 'subject', text: 'I' }, { kind: 'verb', text: 'saw' }, { kind: 'time', text: 'an old friend.' }], note: 'was walking is the action in progress; saw is the short event.' },
+    { parts: [{ kind: 'connector', text: 'While' }, { kind: 'subject', text: 'we' }, { kind: 'auxiliary', text: 'were' }, { kind: 'verb', text: 'having' }, { kind: 'time', text: 'dinner,' }, { kind: 'subject', text: 'the lights' }, { kind: 'verb', text: 'went out.' }], note: 'While introduces the background action; the lights went out is the interruption.' },
+    { parts: [{ kind: 'subject', text: 'She' }, { kind: 'auxiliary', text: 'was' }, { kind: 'verb', text: 'studying' }, { kind: 'time', text: 'at home.' }], note: 'Use Past Continuous when there is no short interruption and you only describe the scene.' }
+  ],
+  mistake: 'Do not say “I was walked”. After was / were, use verb + -ing: “I was walking”.',
+  tip: 'Ask yourself: which action was longer? Put that action in Past Continuous.'
+};
+
+window.GOKCEN_CURRICULUM['2026-09-14-r5n8c2z6w3'].grammar.guide = pastStoryGuide;
+window.GOKCEN_CURRICULUM['2026-09-16-m4q7r2v9k6'].grammar.guide = pastStoryGuide;
+window.GOKCEN_CURRICULUM['2026-11-04-c7n2p8v4r6'].grammar.guide = {
+  intro: 'Most questions about finished past events follow one reliable order. Learn the coloured parts, then use the same pattern with different question words.',
+  patterns: [
+    { label: 'Most past questions', parts: [{ kind: 'question', text: 'question word' }, { kind: 'auxiliary', text: 'did' }, { kind: 'subject', text: 'subject' }, { kind: 'verb', text: 'base verb' }], note: 'Use this for what, where, when, why, which and who as the object.' },
+    { label: 'An exact hour', parts: [{ kind: 'question', text: 'what time' }, { kind: 'auxiliary', text: 'did' }, { kind: 'subject', text: 'subject' }, { kind: 'verb', text: 'base verb' }], note: 'Use what time when you want a specific hour, such as 7:15.' },
+    { label: 'Who is the subject', parts: [{ kind: 'question', text: 'who' }, { kind: 'verb', text: 'past verb' }, { kind: 'subject', text: 'object' }], note: 'When who does the action, do not add did or another subject.' }
+  ],
+  examples: [
+    { parts: [{ kind: 'question', text: 'Where' }, { kind: 'auxiliary', text: 'did' }, { kind: 'subject', text: 'you' }, { kind: 'verb', text: 'meet?' }], note: 'Where asks for the place. did carries the past; meet stays in the base form.' },
+    { parts: [{ kind: 'question', text: 'What time' }, { kind: 'auxiliary', text: 'did' }, { kind: 'subject', text: 'the lesson' }, { kind: 'verb', text: 'start?' }], note: 'What time asks for an exact hour, not a general day or date.' },
+    { parts: [{ kind: 'question', text: 'Who' }, { kind: 'verb', text: 'called' }, { kind: 'subject', text: 'you?' }], note: 'Who is the person doing the action, so called is already in the past form.' },
+    { parts: [{ kind: 'question', text: 'Who' }, { kind: 'auxiliary', text: 'did' }, { kind: 'subject', text: 'you' }, { kind: 'verb', text: 'call?' }], note: 'Here who is the object: you did the calling, so use did + base verb.' }
+  ],
+  mistake: 'Do not use the past verb after did. Say “Where did you go?”, not “Where did you went?”.',
+  tip: 'If you can answer with a person who did the action, use “Who + past verb?” without did.'
+};

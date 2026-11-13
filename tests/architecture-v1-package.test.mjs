@@ -70,7 +70,9 @@ test("future packages use accessible section tabs and retain device-local progre
   assert.match(renderer, /role=\"tablist\"/);
   assert.match(renderer, /role=\"tabpanel\"/);
   assert.match(renderer, /state\.tab/);
-  assert.match(renderer, /lesson-select/);
+  assert.match(renderer, /lesson-menu/);
+  assert.match(renderer, /theme-toggle/);
+  assert.match(renderer, /Try another answer/);
   assert.match(renderer, /flashcard/);
   assert.match(curriculum, /britishcouncil\.org/);
   assert.equal(curriculum.includes("Savascan"), false);
